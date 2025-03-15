@@ -124,6 +124,7 @@
   top:calc(5vh + 30px);
   display: flex;
   justify-content: center;
+  overflow-x: hidden;/* 不允许横向滚动 */
   overflow-y: scroll; /* 允许垂直滚动 */
   scrollbar-width: none; /* 针对Firefox浏览器隐藏滚动条 */
   -ms-overflow-style: none; /* 针对IE和Edge隐藏滚动条 */
