@@ -101,7 +101,8 @@
 
 #map-btn {
   padding: 10px 20px;
-  font-size: 16px;
+  width: 80px;
+  height: 50px;
   color: white;
   background-color: #007BFF;
   border: none;
@@ -115,6 +116,10 @@
   background-color: #0056b3;
 }
 
+#map-btn img {
+  width: 75px;
+  height: 40px;
+}
 
 
 .menu-container {
@@ -325,6 +330,16 @@ th {
   table {
     width: 95%;
     font-size: 2.1vmin;
+  }
+
+  #map-btn {
+    width: 60px;
+    height: 30px;
+  }
+
+  #map-btn img {
+    width: 55px;
+    height: 25px;
   }
 
 }
