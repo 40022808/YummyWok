@@ -7,6 +7,8 @@ const nextBtn = document.getElementById("next-btn");
 const currentType = document.getElementById("current-type");
 const dropdownMenu = document.getElementById("dropdown-menu");
 
+const menuContainer = document.querySelector(".menu-container");
+
 const menu_Snacks = document.querySelector(".menu-Snacks");
 const menu_Soups = document.querySelector(".menu-Soups");
 const menu_Ramen = document.querySelector(".menu-Ramen");
@@ -59,6 +61,7 @@ function 显示内容(type) {
 function updateType() {
     currentType.childNodes[0].nodeValue = types[currentIndex]; // 修改显示文字
     显示内容(types[currentIndex]); // 显示对应内容
+    menuContainer.scrollTo(0, 0); // 直接跳到顶部
 }
 
 // 左按钮事件监听
