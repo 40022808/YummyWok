@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 
-
 }
 
 
@@ -60,9 +59,9 @@
 
 
 #current-type {
-  width: 300px;
+  width: 150px;
   text-align: center;
-  font-size: 2.5vmin;
+  font-size: 1.2vmin;
   cursor: pointer;
   padding: 5px 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -71,7 +70,7 @@
 }
 
 #dropdown-menu {
-  width: 300px;
+  width: 150px;
   display: none; /* 初始隐藏 */
   position: absolute;
   bottom: 100%; /* 紧挨着显示区 */
