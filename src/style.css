@@ -5,53 +5,6 @@
 
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(0, 68, 0);
-  /* background-image: url("assets/图片_20250315143040.jpg"),url("assets/图片_20250315143057.jpg"); */
-  background-size: contain, contain; 
-  background-repeat: no-repeat, no-repeat;
-  background-position: center center, center center;
-}
-
-.wrapper_h1 {
-  position: absolute;
-  top: 5vh;
-  font-size: 6vmin;
-  color: red;
-  font-style: italic;
-  letter-spacing: 2px;
-  text-shadow: -0.2vmin -0.2vmin 0 black, 0.2vmin -0.2vmin 0 black, -0.2vmin 0.2vmin 0 black, 0.2vmin 0.2vmin 0 black;
-}
-
-.language {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.language button {
-  box-sizing: border-box;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: rgb(236, 201, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease;
-  font-size: 4vmin;
-  padding: 20px;
-}
-
-.language button:hover {
-  background-color: rgb(236, 227, 0);
-}
 
 .navbar {
   padding: 15px;
@@ -62,12 +15,26 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  height: 5vh;
 
+}
+
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  background-color: rgb(77, 5, 5);
+  color: white;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh;
 }
 
 .logo {
   display: flex;
-  gap: 5px;
+  gap: 15px;
 }
 
 
@@ -77,8 +44,59 @@
   height: 50px;
 }
 
-#back_btn {
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 7px;
+.bottom-navbar-type {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
+.bottom-navbar-type button {
+  font-size: 3vmin;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+
+#current-type {
+  width: 300px;
+  text-align: center;
+  font-size: 2.5vmin;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  position:relative; /* 为下拉菜单定位 */
+}
+
+#dropdown-menu {
+  width: 300px;
+  display: none; /* 初始隐藏 */
+  position: absolute;
+  bottom: 100%; /* 紧挨着显示区 */
+  left: 0;
+  background-color: white;
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#dropdown-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+#dropdown-menu li.no1 {
+  border-top: 1px solid black;
+}
+
+#dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
