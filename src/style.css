@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
 }
 
 
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 6vh;
+  height: 5vh;
 
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 6vh;
+  height: 5vh;
 }
 
 .logo {
@@ -63,10 +63,11 @@
   text-align: center;
   font-size: 2vmin;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   position:relative; /* 为下拉菜单定位 */
+  box-sizing: border-box;
 }
 
 #dropdown-menu {
@@ -79,7 +80,9 @@
   color: black;
   list-style: none;
   margin: 0;
+  padding: 5px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 #dropdown-menu li {
@@ -96,17 +99,114 @@
   background-color: #f0f0f0;
 }
 
+#map-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#map-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.menu-container {
+  width: 100vw;
+  height: calc(90vh - 30px);
+  position: fixed;
+  top:calc(5vh + 30px);
+  display: flex;
+  justify-content: center;
+}
+
+
+.menu-Snacks {
+  display: block;
+}
+
+.menu-Soups {
+  display: none;
+}
+
+.menu-Ramen {
+  display: none;
+}
+
+.menu-Vegetables {
+  display: none;
+}
+
+.menu-Rice_bowl {
+  display: none;
+}
+
+.menu-Noodles_wok_Box {
+  display: none;
+}
+
+.menu-Rice_wok_Box {
+  display: none;
+}
+
+.menu-Ricenoodles_wok_Box {
+  display: none;
+}
+
+.menu-Mix_dry_noodles {
+  display: none;
+}
+
+.menu-Drinks {
+  display: none;
+}
+
+.menu-Desserts {
+  display: none;
+}
+
+.menu-Salads {
+  display: none;
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 1024px) {
+
+  .navbar {
+    height: 3.5vh;
+  }
+
+  .bottom-navbar {
+    height: 3vh;
+  }
+
   #current-type {
-    width: 100px;
+    width: 110px;
   }
   
   #dropdown-menu {
-    width: 100px;
+    width: 110px;
   }
   .bottom-navbar-type {
     gap: 8px;
   }
+
+  .menu-container {
+    height: calc(93.5vh - 30px);
+    top:calc(3.5vh + 30px);
+  }
+
+
+
 }
