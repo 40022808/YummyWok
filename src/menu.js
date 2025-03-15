@@ -87,6 +87,13 @@ currentType.addEventListener("click", () => {
     }
 });
 
+// 点击任何地方隐藏菜单
+document.addEventListener("click", (e) => {
+    if (e.target.id != "dropdown-menu" && e.target.id != "current-type") {
+        dropdownMenu.style.display = "none";
+    }
+});
+
 // 下拉菜单点击事件
 dropdownMenu.addEventListener("click", (e) => {
     e.stopPropagation(); // 阻止事件冒泡
