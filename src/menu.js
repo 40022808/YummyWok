@@ -37,20 +37,20 @@ function 显示内容初始化() {
 
 function 显示内容(type) {
     显示内容初始化();
-    if (type === "Snacks") { menu_Snacks.style.display = "block"; }
-    else if (type === "Soups") { menu_Soups.style.display = "block"; }
-    else if (type === "Ramen") { menu_Ramen.style.display = "block"; }
-    else if (type === "Vegetables") { menu_Vegetables.style.display = "block"; }
-    else if (type === "Rice bowl") { menu_Rice_bowl.style.display = "block"; }
-    else if (type === "Rice bowl") { menu_Rice_bowl.style.display = "block"; }
-    else if (type === "Noodles wok Box") { menu_Noodles_wok_Box.style.display = "block"; }
-    else if (type === "Rice wok Box") { menu_Rice_wok_Box.style.display = "block"; }
-    else if (type === "Ricenoodles wok Box") { menu_Ricenoodles_wok_Box.style.display = "block"; }
-    else if (type === "Mix dry noodles") { menu_Mix_dry_noodles.style.display = "block"; }
-    else if (type === "Mix dry noodles") { menu_Mix_dry_noodles.style.display = "block"; }
-    else if (type === "Drinks") { menu_Drinks.style.display = "block"; }
-    else if (type === "Desserts") { menu_Desserts.style.display = "block"; }
-    else if (type === "Salads") { menu_Salads.style.display = "block"; }
+    if (type === "Snacks") { menu_Snacks.style.display = "flex"; }
+    else if (type === "Soups") { menu_Soups.style.display = "flex"; }
+    else if (type === "Ramen") { menu_Ramen.style.display = "flex"; }
+    else if (type === "Vegetables") { menu_Vegetables.style.display = "flex"; }
+    else if (type === "Rice bowl") { menu_Rice_bowl.style.display = "flex"; }
+    else if (type === "Rice bowl") { menu_Rice_bowl.style.display = "flex"; }
+    else if (type === "Noodles wok Box") { menu_Noodles_wok_Box.style.display = "flex"; }
+    else if (type === "Rice wok Box") { menu_Rice_wok_Box.style.display = "flex"; }
+    else if (type === "Ricenoodles wok Box") { menu_Ricenoodles_wok_Box.style.display = "flex"; }
+    else if (type === "Mix dry noodles") { menu_Mix_dry_noodles.style.display = "flex"; }
+    else if (type === "Mix dry noodles") { menu_Mix_dry_noodles.style.display = "flex"; }
+    else if (type === "Drinks") { menu_Drinks.style.display = "flex"; }
+    else if (type === "Desserts") { menu_Desserts.style.display = "flex"; }
+    else if (type === "Salads") { menu_Salads.style.display = "flex"; }
 
 }
 
@@ -75,7 +75,13 @@ nextBtn.addEventListener("click", () => {
 
 // 显示菜单
 currentType.addEventListener("click", () => {
-    dropdownMenu.style.display = "block";
+    var display = window.getComputedStyle(dropdownMenu).display;
+    if (display == "none") {
+        dropdownMenu.style.display = "block";
+    }
+    else if (display == "block") {
+        dropdownMenu.style.display = "none";
+    }
 });
 
 // 下拉菜单点击事件

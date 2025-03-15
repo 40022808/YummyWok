@@ -119,11 +119,53 @@
 
 .menu-container {
   width: 100vw;
-  height: calc(90vh - 30px);
+  height: calc(90vh - 6vh);
   position: fixed;
   top:calc(5vh + 30px);
   display: flex;
   justify-content: center;
+  overflow-y: scroll; /* 允许垂直滚动 */
+  scrollbar-width: none; /* 针对Firefox浏览器隐藏滚动条 */
+  -ms-overflow-style: none; /* 针对IE和Edge隐藏滚动条 */
+}
+
+.menu-container div {
+  position: relative;
+  top: 3vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container div h2 {
+  font-size: 5vmin;
+  color: rgb(216, 184, 0);
+  margin-bottom: 2vh;
+  padding-bottom: 1vh;
+  border-bottom: 1.5px solid rgb(216, 184, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  padding-left: 25vw;
+}
+
+.menu-item p {
+  line-height: 2.5;
+  font-size: 3.5vmin;
+}
+
+.menu-item img {
+  width: 600px;
+  height: 500px;
+  margin-right: 20vw;
 }
 
 
@@ -203,10 +245,28 @@
   }
 
   .menu-container {
-    height: calc(93.5vh - 30px);
+    height: calc(93.5vh - 6vh);
     top:calc(3.5vh + 30px);
   }
 
+  .menu-container div h2 {
+    font-size: 8vmin;
+  }
+
+  .menu-item {
+    padding-left: 10vw;
+  }
+
+  .menu-item img {
+    width: 180px;
+    height: 150px;
+    margin-right: 5vw;
+  }
+
+  .menu-item p {
+    line-height: 1.5;
+    font-size: 3.5vmin;
+  }
 
 
 }
