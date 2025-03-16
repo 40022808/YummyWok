@@ -1,4 +1,4 @@
-const types = ["Snacks","Soups","Ramen","Vegetables","Rice bowl","Noodles wok Box","Rice wok Box","Ricenoodles wok Box","Mix dry noodles", "Drinks", "Desserts","Salads"];
+const types = ["Snacks","Salads","Soups","Ramen","Vegetables","Rice bowl","Noodles wok Box","Rice wok Box","Ricenoodles wok Box","Mix dry noodles", "Desserts", "Drinks"];
 let currentIndex = 0;
 
 // 获取按钮和显示区域的元素
