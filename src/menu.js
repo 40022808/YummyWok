@@ -1,3 +1,5 @@
+const version = "1.2.0";
+
 const types = ["Snacks","Salads","Soups","Ramen","Vegetables","Rice bowl","Noodles wok Box","Rice wok Box","Ricenoodles wok Box","Mix dry noodles", "Desserts", "Drinks"];
 let currentIndex = 0;
 
