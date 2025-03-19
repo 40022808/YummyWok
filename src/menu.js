@@ -6,6 +6,7 @@ const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 const currentType = document.getElementById("current-type");
 const dropdownMenu = document.getElementById("dropdown-menu");
+const phone_btn = document.getElementById("phone-btn");
 
 const menuContainer = document.querySelector(".menu-container");
 
@@ -21,6 +22,30 @@ const menu_Mix_dry_noodles = document.querySelector(".menu-Mix_dry_noodles");
 const menu_Drinks = document.querySelector(".menu-Drinks");
 const menu_Desserts = document.querySelector(".menu-Desserts");
 const menu_Salads = document.querySelector(".menu-Salads");
+
+const phone_black_content = document.querySelector(".phone-black-content");
+const phone_black_close_btn = document.querySelector(".phone-black-close-btn");
+const phone_black = document.querySelector(".phone-black");
+
+phone_black_close_btn.addEventListener("click", () => {
+    phone_black.style.display = "none";
+});
+
+phone_btn.addEventListener("click", () => {
+    phone_black.style.display = "flex";
+});
+
+// 点击手机黑色背景关闭手机黑色背景
+phone_black.addEventListener("click", () => {
+    phone_black.style.display = "none";
+})
+
+phone_black_content.addEventListener("click", (event) => {
+    event.stopPropagation(); // 阻止事件冒泡
+});
+
+
+
 
 function 显示内容初始化() {
     menu_Snacks.style.display = "none";
